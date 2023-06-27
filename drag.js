@@ -55,6 +55,12 @@ function drop() {
   } else {
     tarefa.classList.remove('tarefa-concluida');
   }
+
+  if (this.id === 'cardFazendo') {
+    tarefa.classList.add('tarefa-fazendo');
+  } else {
+    tarefa.classList.remove('tarefa-fazendo');
+  }
 }
 
 cards.forEach(function(card) {
